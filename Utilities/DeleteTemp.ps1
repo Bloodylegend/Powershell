@@ -2,7 +2,7 @@
 Get-Job | Remove-Job -Force
 Clear-Host
 # Get Computer names
-$ComputerNames = Get-Content -Path "C:\Users\freemanc.admin\Desktop\DeleteTemp.txt"
+$ComputerNames = Get-Content -Path "C:\Users\USERNAME\Desktop\DeleteTemp.txt"
 #Clear temp Folder as a job
 $Job = {
 	param([string]$ComputerName)
